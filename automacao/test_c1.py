@@ -29,7 +29,4 @@ class TestC1():
     self.driver.find_element(By.CSS_SELECTOR, ".ng-dirty > option:nth-child(2)").click()
     self.driver.find_element(By.CSS_SELECTOR, ".btn").click()
   
-  test_c1(url)
-
-	  	
 
