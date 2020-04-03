@@ -16,7 +16,9 @@ import unittest
 
 
 
-driver =  webdriver.Chrome('C://ProjetoAtech//Atech/automacao//drivers//chromedriver_win32//chromedriver.exe')  
+driver =  webdriver.Chrome('C://ProjetoAtech//Atech/automacao//drivers//chromedriver_win32//chromedriver.exe') 
+chrome_options = Options()
+chrome_options.add_argument("--disable-notifications") 
 driver.maximize_window()
 driver.get("https://atech-airlines-ui-staging.herokuapp.com/") 
 class FP(unittest.TestCase):
@@ -62,6 +64,6 @@ class FP(unittest.TestCase):
             driver.save_screenshot('C://ProjetoAtech//Atech//automacao//evidencias//evidencia_Partida_Chegada.png')
             time.sleep(2)
 
-  
-
+    
+    def test_CT_02(self):
 
