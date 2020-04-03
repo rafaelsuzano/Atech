@@ -1,6 +1,7 @@
 # Testes Técnico - Atech Embraer
 
 
-Casos de testes
+As libs utilizadas estão no arquivo requirement.txt
+
   
 
