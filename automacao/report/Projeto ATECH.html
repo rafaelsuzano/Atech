@@ -11,9 +11,9 @@
         <div class="row">
             <div class="col-xs-12">
                 <h2 class="text-capitalize">Atech Airlines</h2>
-                <p class='attribute'><strong>Start Time: </strong>2020-04-02 22:10:13</p>
-                <p class='attribute'><strong>Duration: </strong>14.29 s</p>
-                <p class='attribute'><strong>Summary: </strong>Total: 2, Pass: 2</p>
+                <p class='attribute'><strong>Start Time: </strong>2020-04-02 23:00:29</p>
+                <p class='attribute'><strong>Duration: </strong>25.63 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 3, Pass: 2, Fail: 1</p>
             </div>
         </div>
         <div class="row">
@@ -55,9 +55,26 @@
 </p>
                             </td>
                         </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_CT_03</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: False != 'Data de chegada menor que data de Partida'</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\ProjetoAtech\Atech\automacao\CoreTest.py", line 84, in test_CT_03
+    self.assertEqual(d1<d2,"Data de chegada menor que data de Partida")
+AssertionError: False != 'Data de chegada menor que data de Partida'
+</p>
+                            </td>
+                        </tr>
                         <tr>
                             <td colspan="3">
-                                Total: 2, Pass: 2 -- Duration: 14.29 s
+                                Total: 3, Pass: 2, Fail: 1 -- Duration: 25.63 s
                             </td>
                         </tr>
                     </tbody>
