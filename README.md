@@ -2,8 +2,8 @@
 
 Requisitos
 
-Chrome versão ...
-Python versão ...
+Chrome versão Version 80.0.3987.163 (Official Build) (64-bit)
+Python 3.8.2
 IDE VisualCode
 
 
