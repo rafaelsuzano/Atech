@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import CoreTest
 import os
 import unittest
