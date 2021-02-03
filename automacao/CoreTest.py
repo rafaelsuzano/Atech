@@ -42,7 +42,7 @@ class FP(unittest.TestCase):
             driver.find_element(By.CSS_SELECTOR, ".ng-dirty > option:nth-child(2)").click()
             driver.find_element(By.CSS_SELECTOR, ".btn").click()
             time.sleep(2)
-            driver.save_screenshot('C://ProjetoAtech//Atech//automacao//evidencias//evidencia_origem_SJC.png')
+            driver.save_screenshot('//opt//suzanoit//automacao//evidencia_origem_SJC.png')
               
     def test_CT_02(self):
          
