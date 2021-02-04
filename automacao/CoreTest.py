@@ -16,7 +16,9 @@ import unittest
 
 
 
-driver =  webdriver.Chrome("/opt/DriverChromer/chromedriver") 
+#driver =  webdriver.Chrome('/opt/DriverChromer/chromedriver') 
+driver = webdriver.Chrome(executable_path='/opt/DriverChromer/chromedriver')
+
 
 driver.maximize_window()
 driver.get("https://atech-airlines-ui-staging.herokuapp.com/") 
