@@ -16,7 +16,7 @@ import unittest
 
 
 
-driver =  webdriver.Chrome('/bin/DriverChrome/chromedriver) 
+driver =  webdriver.Chrome('/bin/DriverChrome/chromedriver') 
 
 
 
