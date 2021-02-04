@@ -16,8 +16,8 @@ import unittest
 
 
 
-#driver =  webdriver.Chrome('/opt/DriverChromer/chromedriver') 
-driver = webdriver.Chrome(executable_path='/bin/DriverChrome/chromedriver')
+driver =  webdriver.Chrome('/bin/DriverChrome/chromedriver) 
+
 
 
 driver.maximize_window()
