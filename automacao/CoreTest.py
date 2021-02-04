@@ -16,7 +16,7 @@ import unittest
 
 
 
-driver =  webdriver.Chrome('//opt//DriverChromer//chromedriver') 
+driver =  webdriver.Chrome("/opt/DriverChromer/chromedriver") 
 
 driver.maximize_window()
 driver.get("https://atech-airlines-ui-staging.herokuapp.com/") 
@@ -42,7 +42,7 @@ class FP(unittest.TestCase):
             driver.find_element(By.CSS_SELECTOR, ".ng-dirty > option:nth-child(2)").click()
             driver.find_element(By.CSS_SELECTOR, ".btn").click()
             time.sleep(2)
-            driver.save_screenshot('//opt//suzanoit//automacao//evidencia_origem_SJC.png')
+            driver.save_screenshot("opt/suzanoit/automacao/evidencia_origem_SJC.png')
               
     def test_CT_02(self):
          
