@@ -5,7 +5,7 @@ import pytest
 import json
 import unittest
 
-ChromeOptins = new ChromeOptins();
+#ChromeOptins = new ChromeOptins();
 option.setBinary("/usr/bin/chromedriver")
 chrome_options = Options() chrome_options.add_argument('--headless') 
 chrome_options.add_argument('--no-sandbox') 
