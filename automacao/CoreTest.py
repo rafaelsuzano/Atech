@@ -5,8 +5,13 @@ import pytest
 import json
 import unittest
 
+ChromeOptins = new ChromeOptins();
+option.setBinary("/usr/bin/chromedriver")
+chrome_options = Options() chrome_options.add_argument('--headless') 
+chrome_options.add_argument('--no-sandbox') 
+chrome_options.add_argument('--disable-dev-shm-usage') 
+driver = webdriver.Chrome("/usr/bin/chromedriver",chrome_options=chrome_options)
 
-driver = webdriver.Chrome("/usr/bin/chromedriver")
 
 driver.maximize_window()
 driver.get("https://atech-airlines-ui-staging.herokuapp.com/") 
