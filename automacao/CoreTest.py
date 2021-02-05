@@ -8,11 +8,6 @@ import unittest
 
 driver = webdriver.Chrome("/usr/bin/chromedriver")
 
-
-
-
-
-
 driver.maximize_window()
 driver.get("https://atech-airlines-ui-staging.herokuapp.com/") 
 class FP(unittest.TestCase):
