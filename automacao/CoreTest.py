@@ -1,11 +1,14 @@
 # -*- coding: utf-8 -*-
-from selenium import webdriver
+
 import time
 import pytest
 import json
 import unittest
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+chrome_options = Options()
 
-#ChromeOptins = new ChromeOptins();
+
 option.setBinary("/usr/bin/chromedriver")
 chrome_options = Options() chrome_options.add_argument('--headless') 
 chrome_options.add_argument('--no-sandbox') 
