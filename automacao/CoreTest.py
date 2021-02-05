@@ -10,10 +10,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.support import expected_conditions as EC
-
-
 from selenium import webdriver
-
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 import unittest
@@ -25,7 +22,9 @@ chrome_options.add_argument('--headless')
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
 
-driver =  webdriver.Chrome('/bin/DriverChrome/chromedriver') 
+driver =  webdriver.Chrome('/bin/DriverChrome/chromedriver',desired_capabilities=DesiredCapabilities.CHROME,
+            options=options) 
+
 
 
 
@@ -34,9 +33,7 @@ driver.get("https://atech-airlines-ui-staging.herokuapp.com/")
 class FP(unittest.TestCase):
     #def setUp(self):
 
-       
-     
-     
+  
 
 
     def test_CT_01(self):
