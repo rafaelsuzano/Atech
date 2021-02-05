@@ -11,8 +11,8 @@ chrome_options = Options()
 
 #chrome_options = Options() chrome_options.add_argument('--headless') 
 chrome_options.add_argument('--no-sandbox') 
-chrome_options.add_argument('--disable-dev-shm-usage') 
-driver = webdriver.Chrome(executable_path="/usr/bin/chromedriver",chrome_options=chrome_options)
+chrome_options.add_argument('--disable-dev-shm-usage')
+driver = webdriver.Chrome(executable_path="//usr//bin//chromedriver",chrome_options=chrome_options)
 
 
 driver.maximize_window()
@@ -59,7 +59,7 @@ class FP(unittest.TestCase):
             dropdown.find_element(By.XPATH, "//option[. = 'São José dos Campos']").click()
             driver.find_element(By.CSS_SELECTOR, ".ng-dirty > option:nth-child(2)").click()
             driver.find_element(By.CSS_SELECTOR, ".btn").click()
-            driver.save_screenshot('C://ProjetoAtech//Atech//automacao//evidencias//evidencia_Partida_Chegada.png')
+            driver.save_screenshot('opt/suzanoit/automacao/evidencia_Partida_Chegada.png')
             time.sleep(2)
        
     #@unittest.skip("Em desenvolvimento")
