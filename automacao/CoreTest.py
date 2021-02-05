@@ -6,8 +6,9 @@ import json
 import unittest
 
 
+driver = webdriver.Chrome("/usr/bin/chromedriver",chrome_options=chrome_options)
 
-driver = webdriver.Chrome()
+
 
 
 
