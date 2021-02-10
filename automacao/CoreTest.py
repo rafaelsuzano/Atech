@@ -20,7 +20,10 @@ from selenium.webdriver.support import expected_conditions as EC
 import unittest
 
 
-
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument("--headless")
+chrome_options.add_argument("--disable-gpu")
+browser = webdriver.Chrome(options=chrome_options)
 
 driver =  webdriver.Chrome('/usr/local/bin/chromedriver') 
 
