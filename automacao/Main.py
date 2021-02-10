@@ -6,7 +6,7 @@ import HtmlTestRunner
 
 from pathlib import Path
 
-current_directory = Path('\\ProjetoAtech\\Atech\\automacao\\report')
+current_directory = Path('\\report')
 FP =  unittest.defaultTestLoader.loadTestsFromTestCase(CoreTest.FP)
 suite = unittest.TestSuite([FP])
 
