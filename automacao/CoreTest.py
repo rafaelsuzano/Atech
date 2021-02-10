@@ -57,7 +57,7 @@ class FP(unittest.TestCase):
             driver.find_element(By.CSS_SELECTOR, ".ng-dirty > option:nth-child(2)").click()
             driver.find_element(By.CSS_SELECTOR, ".btn").click()
             time.sleep(2)
-            driver.save_screenshot("opt/suzanoit/automacao/evidencia_origem_SJC.png")
+            driver.save_screenshot('evidencia_origem_SJC.png')
               
     def test_CT_02(self):
          
@@ -79,7 +79,7 @@ class FP(unittest.TestCase):
             dropdown.find_element(By.XPATH, "//option[. = 'São José dos Campos']").click()
             driver.find_element(By.CSS_SELECTOR, ".ng-dirty > option:nth-child(2)").click()
             driver.find_element(By.CSS_SELECTOR, ".btn").click()
-            driver.save_screenshot('opt/suzanoit/automacao/evidencia_Partida_Chegada.png')
+            driver.save_screenshot('evidencia_Partida_Chegada.png')
             time.sleep(2)
        
     #@unittest.skip("Em desenvolvimento")
