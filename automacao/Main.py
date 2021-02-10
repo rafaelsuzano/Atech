@@ -14,7 +14,7 @@ suite = unittest.TestSuite([suite])
 html_runner = HtmlTestRunner.HTMLTestRunner(report_title='Atech Airlines', descriptions=u"Cenarios de teste",
                                          combine_reports=True, output=current_directory,
                                          add_timestamp=False,
-                                         report_name="Projeto ATECH",
+                                         report_name="ProjetoATECH",
                                          failfast = False,
                                          buffer = True)
 
