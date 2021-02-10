@@ -1,24 +1,38 @@
 # -*- coding: utf-8 -*-
 
+#driver = webdriver.Chrome(executable_path='/usr/bin/chromedriver')
+
+
+# -*- coding: utf-8 -*-
+
+
+from selenium import webdriver
 import time
 import pytest
 import json
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from selenium.webdriver.support import expected_conditions as EC
 import unittest
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-chrome_options = Options()
 
 
-#chrome_options = Options() chrome_options.add_argument('--headless') 
-chrome_options.add_argument('--no-sandbox') 
-chrome_options.add_argument('--disable-dev-shm-usage')
-driver = webdriver.Chrome(executable_path='/usr/bin/chromedriver')
-#,chrome_options=chrome_options
+
+
+
+driver =  webdriver.Chrome('C://usr//bin/chromedriver//chromedriver') 
 
 driver.maximize_window()
 driver.get("https://atech-airlines-ui-staging.herokuapp.com/") 
 class FP(unittest.TestCase):
     #def setUp(self):
+
+
+
+
 
   
 
