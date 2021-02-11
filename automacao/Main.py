@@ -4,15 +4,15 @@ import os
 import unittest
 import HtmlTestRunner
 
-from pathlib import Path
 
-current_directory = Path('\report')
+
+
 FP =  unittest.defaultTestLoader.loadTestsFromTestCase(CoreTest.FP)
 suite = unittest.TestSuite([FP])
 
 suite = unittest.TestSuite([suite])
 html_runner = HtmlTestRunner.HTMLTestRunner(report_title='Atech Airlines', descriptions=u"Cenarios de teste",
-                                         combine_reports=True, output=current_directory,
+                                         combine_reports=True, output="/var/lib/jenkins/workspace/Automacao/automacao/report",
                                          add_timestamp=False,
                                          report_name="ProjetoATECH",
                                          failfast = False,
