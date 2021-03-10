@@ -28,6 +28,9 @@ chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument('--disable-gpu')
 
+chrome_options.add_argument('--disable-dev-shm-usage')
+
+
 driver =  webdriver.Chrome('/usr/local/bin/chromedriver',options=chrome_options) 
 
 
