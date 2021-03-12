@@ -52,7 +52,7 @@ class FP(unittest.TestCase):
             print("Esse cenario contempla filtro Partida")
             element = WebDriverWait(driver, 1000).until(
             EC.visibility_of_element_located((By.XPATH, "/html/body/div/div[2]/div[1]/div[5]/button")))
-            time.sleep(2)
+            time.sleep(5)
             
             #Consulta Somente Origem
             driver.find_element(By.NAME, "grupo").click()
@@ -60,7 +60,7 @@ class FP(unittest.TestCase):
             dropdown.find_element(By.XPATH, "//option[. = 'São José dos Campos']").click()
             driver.find_element(By.CSS_SELECTOR, ".ng-dirty > option:nth-child(2)").click()
             driver.find_element(By.CSS_SELECTOR, ".btn").click()
-            time.sleep(2)
+            time.sleep(5)
             driver.save_screenshot('evidencia_origem_SJC.png')
               
     def test_CT_02(self):
@@ -73,18 +73,18 @@ class FP(unittest.TestCase):
             
             #Consulta data Partida Chegada
             driver.find_element(By.XPATH, "/html/body/div/div[2]/div[1]/div[1]/div/div/md-datepicker/div[1]/input").send_keys("4/01/2018")
-            time.sleep(2)
+            time.sleep(5)
             driver.find_element(By.XPATH,"/html/body/div/div[2]/div[1]/div[2]/div/div/md-datepicker/div[1]/input").send_keys("4/02/2018")
-            time.sleep(2)
+            time.sleep(5)
             driver.find_element(By.CSS_SELECTOR, ".btn").click()
-            time.sleep(2)
+            time.sleep(5)
             driver.find_element(By.NAME, "grupo").click()
             dropdown = driver.find_element(By.NAME, "grupo")
             dropdown.find_element(By.XPATH, "//option[. = 'São José dos Campos']").click()
             driver.find_element(By.CSS_SELECTOR, ".ng-dirty > option:nth-child(2)").click()
             driver.find_element(By.CSS_SELECTOR, ".btn").click()
             driver.save_screenshot('evidencia_Partida_Chegada.png')
-            time.sleep(2)
+            time.sleep(5)
        
     #@unittest.skip("Em desenvolvimento")
     def test_CT_03(self):
@@ -93,13 +93,13 @@ class FP(unittest.TestCase):
         driver.refresh()
         
         element = WebDriverWait(driver, 1000).until(EC.visibility_of_element_located((By.XPATH, "/html/body/div/div[2]/div[1]/div[5]/button")))
-        time.sleep(2)
+        time.sleep(5)
         driver.find_element(By.XPATH, "/html/body/div/div[2]/div[1]/div[1]/div/div/md-datepicker/div[1]/input").send_keys(d1)
         
         
-        time.sleep(2)
+        time.sleep(5)
         driver.find_element(By.XPATH,"/html/body/div/div[2]/div[1]/div[2]/div/div/md-datepicker/div[1]/input").send_keys(d2)
-        time.sleep(2)
+        time.sleep(5)
         driver.find_element(By.CSS_SELECTOR, ".btn").click()
         self.assertEqual(d1<d2,"Data de chegada menor que data de Partida")
 
