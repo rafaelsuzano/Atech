@@ -10,7 +10,7 @@ entrypoints==0.3
 env==0.1.0
 html-testRunner==1.2.1
 ipykernel==5.2.0
-ipython==7.16.3
+ipython==8.10.0
 ipython-genutils==0.2.0
 isort==4.3.21
 jedi==0.16.0
